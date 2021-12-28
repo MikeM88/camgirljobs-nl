@@ -2,15 +2,15 @@ body {
   font-family: Jost;
 }
 .display-1 {
-  font-family: 'Jost', sans-serif;
-  font-size: 4.6rem;
+  font-family: 'Lora', serif;
+  font-size: 4rem;
   line-height: 1.1;
 }
 .display-1 > .mbr-iconfont {
-  font-size: 5.75rem;
+  font-size: 5rem;
 }
 .display-2 {
-  font-family: 'Jost', sans-serif;
+  font-family: 'Lora', serif;
   font-size: 2rem;
   line-height: 1.1;
 }
@@ -18,15 +18,15 @@ body {
   font-size: 2.5rem;
 }
 .display-4 {
-  font-family: 'Jost', sans-serif;
-  font-size: 1rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 0.8rem;
   line-height: 1.5;
 }
 .display-4 > .mbr-iconfont {
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 .display-5 {
-  font-family: 'Jost', sans-serif;
+  font-family: 'Lora', serif;
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -34,7 +34,7 @@ body {
   font-size: 1.25rem;
 }
 .display-7 {
-  font-family: 'Jost', sans-serif;
+  font-family: 'Lora', serif;
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -48,14 +48,14 @@ body {
 /* 0.65 - min scale variable, may vary */
 @media (max-width: 992px) {
   .display-1 {
-    font-size: 3.68rem;
+    font-size: 3.2rem;
   }
 }
 @media (max-width: 768px) {
   .display-1 {
-    font-size: 3.22rem;
-    font-size: calc( 2.26rem + (4.6 - 2.26) * ((100vw - 20rem) / (48 - 20)));
-    line-height: calc( 1.1 * (2.26rem + (4.6 - 2.26) * ((100vw - 20rem) / (48 - 20))));
+    font-size: 2.8rem;
+    font-size: calc( 2.05rem + (4 - 2.05) * ((100vw - 20rem) / (48 - 20)));
+    line-height: calc( 1.1 * (2.05rem + (4 - 2.05) * ((100vw - 20rem) / (48 - 20))));
   }
   .display-2 {
     font-size: 1.6rem;
@@ -63,9 +63,9 @@ body {
     line-height: calc( 1.3 * (1.35rem + (2 - 1.35) * ((100vw - 20rem) / (48 - 20))));
   }
   .display-4 {
-    font-size: 0.8rem;
-    font-size: calc( 1rem + (1 - 1) * ((100vw - 20rem) / (48 - 20)));
-    line-height: calc( 1.4 * (1rem + (1 - 1) * ((100vw - 20rem) / (48 - 20))));
+    font-size: 0.64rem;
+    font-size: calc( 0.93rem + (0.8 - 0.93) * ((100vw - 20rem) / (48 - 20)));
+    line-height: calc( 1.4 * (0.93rem + (0.8 - 0.93) * ((100vw - 20rem) / (48 - 20))));
   }
   .display-5 {
     font-size: 0.8rem;
@@ -595,13 +595,13 @@ a:hover {
   display: none;
 }
 .form-control {
-  font-family: 'Jost', sans-serif;
-  font-size: 1rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 0.8rem;
   line-height: 1.5;
   font-weight: 400;
 }
 .form-control > .mbr-iconfont {
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 .form-control:hover,
 .form-control:focus {
@@ -609,13 +609,13 @@ a:hover {
   border-color: #ff8a8a !important;
 }
 .form-control:-webkit-input-placeholder {
-  font-family: 'Jost', sans-serif;
-  font-size: 1rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 0.8rem;
   line-height: 1.5;
   font-weight: 400;
 }
 .form-control:-webkit-input-placeholder > .mbr-iconfont {
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 blockquote {
   border-color: #ff8a8a;
@@ -704,14 +704,11 @@ body {
 a {
   transition: color 0.6s;
 }
-.cid-sSKTGlrcEg {
-  z-index: 1000;
-  width: 100%;
-  position: relative;
-  min-height: 60px;
+.cid-sSKTGlrcEg .navbar-dropdown {
+  position: relative !important;
 }
-.cid-sSKTGlrcEg nav.navbar {
-  position: fixed;
+.cid-sSKTGlrcEg .navbar-dropdown {
+  position: absolute !important;
 }
 .cid-sSKTGlrcEg .dropdown-item:before {
   font-family: Moririse2 !important;
@@ -816,8 +813,8 @@ a {
   min-height: 70px;
   transition: all 0.3s;
   border-bottom: 1px solid transparent;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  background: #ffffff;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
 }
 .cid-sSKTGlrcEg .navbar.opened {
   transition: all 0.3s;
@@ -1035,7 +1032,6 @@ a {
 }
 .cid-sSKTGlrcEg .navbar-dropdown {
   padding: 0 1rem;
-  position: fixed;
 }
 .cid-sSKTGlrcEg a.nav-link {
   display: flex;
@@ -1065,7 +1061,7 @@ a {
   }
 }
 .cid-sSKTH2VSTp {
-  padding-top: 3rem;
+  padding-top: 5rem;
   padding-bottom: 3rem;
   background-image: url("../../../assets/images/mbr-1920x1338.jpg");
 }
@@ -1073,6 +1069,62 @@ a {
   padding-top: 2rem;
   padding-bottom: 2rem;
   background-color: #ffffff;
+}
+.cid-sSQeVjgPOA {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #fcebeb;
+}
+.cid-sSQeVjgPOA img,
+.cid-sSQeVjgPOA .item-img {
+  width: 100%;
+  height: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.cid-sSQeVjgPOA .item:focus,
+.cid-sSQeVjgPOA span:focus {
+  outline: none;
+}
+.cid-sSQeVjgPOA .item {
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.cid-sSQeVjgPOA .item-wrapper {
+  position: relative;
+  border-radius: 4px;
+  background: #fafafa;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+@media (min-width: 992px) {
+  .cid-sSQeVjgPOA .item-wrapper .item-content {
+    padding: 2rem;
+  }
+}
+@media (max-width: 991px) {
+  .cid-sSQeVjgPOA .item-wrapper .item-content {
+    padding: 1rem;
+  }
+}
+.cid-sSQeVjgPOA .mbr-section-btn {
+  margin-top: auto !important;
+}
+.cid-sSQeVjgPOA .mbr-section-title {
+  color: #232323;
+}
+.cid-sSQeVjgPOA .mbr-text,
+.cid-sSQeVjgPOA .mbr-section-btn {
+  text-align: left;
+}
+.cid-sSQeVjgPOA .item-title {
+  text-align: left;
+  color: #6592e6;
+}
+.cid-sSQeVjgPOA .item-subtitle {
+  text-align: left;
+  color: #232323;
 }
 .cid-sSKU0w8KlC {
   padding-top: 2rem;
